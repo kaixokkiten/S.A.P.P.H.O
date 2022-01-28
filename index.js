@@ -23,13 +23,13 @@ const sanreg = /(~|!|@|#|\$|%|\^|&|\*|\(|\)|\_|\+|\`|-|=|\[|\]|;|'|,|\.|\/|\{|\}
 let sanitize = e => e.replace(sanreg, '\\$1');
 
 client.on("ready", async() => {
-	guild = await client.guilds.resolve("289933125625053195");
-	vctc_channel = await guild.channels.resolve("325416049292083212");
+	guild = await client.guilds.resolve("379387726044332033");
+	vctc_channel = await guild.channels.resolve("380176940059066378");
 });
 
 // voice state thingie (kui's code)
 client.on('voiceStateUpdate', async (oldVS, newVS) => {
-	console.log("we are getting events")
+	// console.log("we are getting events")
 	if (oldVS.guild.id != guild.id) return;
 	if (!vctc_channel) return;
 	

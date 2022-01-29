@@ -24,7 +24,7 @@ let sanitize = e => e.replace(sanreg, '\\$1');
 
 client.on("ready", async() => {
 	guild = await client.guilds.resolve("379387726044332033");
-	vctc_channel = await guild.channels.resolve("380176940059066378");
+	vctc_channel = await guild.channels.resolve("936785787226304572");
 });
 
 // voice state thingie (kui's code)
